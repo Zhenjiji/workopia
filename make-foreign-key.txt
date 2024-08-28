@@ -1,0 +1,7 @@
+
+ALTER TABLE workopea.listings
+ADD CONSTRAINT fk_listings_users
+   FOREIGN KEY (user_id)
+   REFERENCES workopea.users (id)
+   ON DELETE CASCADE
+   ON UPDATE CASCADE;

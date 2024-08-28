@@ -1,17 +1,13 @@
-<?php // require basePath('views/partials/head.php'); ?>
-<?php // require basePath('views/partials/navbar.php'); ?>
-<?php // require basePath('views/partials/showcase-search.php'); ?>
-<?php // require basePath('views/partials/top-banner.php'); ?>
 <?php loadPartial('head'); ?>
 <?php loadPartial('navbar'); ?>
-<?php loadPartial('showcase-search'); ?>
 <?php loadPartial('top-banner'); ?>
 
-<?php // this page shows main page with RECENT JOBS ?>
+
+<?php // this page shows ALL JOBS ?>
 <!-- Job Listings -->
 <section>
   <div class="container mx-auto p-4 mt-4">
-    <div class="text-center text-3xl mb-4 font-bold border border-gray-300 p-3">Recent Jobs</div>
+    <div class="text-center text-3xl mb-4 font-bold border border-gray-300 p-3">All Jobs</div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
       <?php foreach ($listings as $listing) : ?>
         <div class="rounded-lg shadow-md bg-white">
@@ -37,19 +33,15 @@
         </div>
       <?php endforeach; ?>
     </div>
-    <a href="/listings" class="block text-xl text-center">
-      <i class="fa fa-arrow-alt-circle-right"></i>
-      Show All Jobs
-    </a>
 </section>
+
     <!-- Job Listings -->
-    <!--
-    <section>
+   <!-- <section>
       <div class="container mx-auto p-4 mt-4">
-        <div class="text-center text-3xl mb-4 font-bold border border-gray-300 p-3">Recent Jobs</div>
+        <div class="text-center text-3xl mb-4 font-bold border border-gray-300 p-3">All Jobs</div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <!-- Job Listing 1: Software Engineer -->
-         <!--  <div class="rounded-lg shadow-md bg-white">
+        <!--   <div class="rounded-lg shadow-md bg-white">
             <div class="p-4">
               <h2 class="text-xl font-semibold">Software Engineer</h2>
               <p class="text-gray-700 text-lg mt-2">
@@ -169,7 +161,7 @@
           </div>
 
           <!-- Job Listing 5: Graphic Designer -->
-       <!--    <div class="rounded-lg shadow-md bg-white">
+          <!-- <div class="rounded-lg shadow-md bg-white">
             <div class="p-4">
               <h2 class="text-xl font-semibold">Graphic Designer</h2>
               <p class="text-gray-700 text-lg mt-2">
@@ -227,14 +219,7 @@
             </div>
           </div>
         </div>
-        <a href="/listings" class="block text-xl text-center">
-          <i class="fa fa-arrow-alt-circle-right"></i>
-          Show All Jobs
-        </a>
-      </section>
 
--->      
- <?php // require basePath('views/partials/bottom-banner.php'); ?>   
- <?php // require basePath('views/partials/footer.php'); ?>
+
 <?php loadPartial('bottom-banner'); ?>
 <?php loadPartial('footer'); ?>
